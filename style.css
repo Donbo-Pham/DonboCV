@@ -423,4 +423,7 @@
         .box__mid02--con {
             width: 350px;
         }
+        .box__mid02--con--bottom p {
+            padding: 0;
+        }
     }
