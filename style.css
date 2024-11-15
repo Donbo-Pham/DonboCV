@@ -1,15 +1,15 @@
     /* Toàn bộ body */
     
     body {
-        max-width: 1530px;
-        margin: 0;
-        padding: 0;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         display: block;
         box-sizing: border-box;
         margin: 0 auto;
-        flex-wrap: wrap
-        /* Căn giữa body */
+        flex-wrap: wrap;
+    }
+    
+    html {
+        scroll-behavior: smooth;
     }
     
     a {
@@ -26,6 +26,11 @@
         font-weight: 700;
     }
     
+    h3 {
+        font-size: 1.4em;
+        line-height: 1.7;
+    }
+    
     p {
         font-size: 1.5em;
         font-weight: 500;
@@ -34,14 +39,14 @@
     
     .menu {
         background-color: black;
-        /* width: 100%; */
-        width: 1530px;
+        width: 100%;
+        /* width: 1530px; */
         color: white;
         display: flex;
         opacity: 1;
         height: 80px;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
         /* Điều chỉnh để phân chia không gian đều */
         position: relative;
         position: fixed;
@@ -77,15 +82,38 @@
         background-color: rgba(255, 255, 255, 0.1);
         border-radius: 30px;
     }
+    /* Hamburger Icon */
+    
+    .menu__toggle {
+        display: none;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 30px;
+        width: 30px;
+        cursor: pointer;
+    }
+    
+    .bar {
+        height: 4px;
+        width: 30px;
+        background-color: white;
+        border-radius: 5px;
+    }
     /* Header */
     
-    .header {
+    header {
         background-color: #f196e4;
         width: 100%;
+        justify-items: center;
+    }
+    
+    .header01 {
+        background-color: #f196e4;
+        max-width: 1140px;
         /* Thêm padding để không gian thoáng hơn */
         /* text-align: center; */
         display: block;
-        padding-top: 100px;
+        padding: 100px;
     }
     
     .header__logo {
@@ -94,7 +122,7 @@
     
     p.logo {
         color: white;
-        font-size: 100px;
+        font-size: 5em;
         font-weight: 900;
         margin: 0;
     }
@@ -149,26 +177,28 @@
         display: block;
         width: 100%;
         padding: 50px 0;
+        justify-items: center;
         /* Thêm padding để các phần tử không dính vào nhau */
     }
     /* Box phần giữa */
     
     .box__mid {
         display: flex;
-        justify-content: space-between;
+        justify-items: center;
         /* Chia đều không gian giữa các phần tử */
-        width: 100%;
+        max-width: 1140px;
+        flex-wrap: wrap;
     }
     /* Text trong box giữa */
     
     .box__mid .text01 {
-        width: 40%;
-        margin: 0 auto;
+        width: 500px;
+        margin: 40px auto;
     }
     /* Tiêu đề trong phần text01 */
     
     .text01 h2 {
-        font-size: 30px;
+        font-size: 2.1em;
         font-weight: bold;
     }
     /* Phần box thứ hai */
@@ -181,9 +211,9 @@
         align-items: center;
     }
     
-    .totalmidbox {
+    .box__mid02 .totalmidbox {
         display: flex;
-        flex-wrap: wrap
+        flex-wrap: wrap;
     }
     
     .box__mid02--con {
@@ -222,8 +252,6 @@
     
     .boxneedpage {
         display: block;
-        margin: 0 auto;
-        justify-content: center;
         text-align: center;
         justify-items: center;
         margin: 30px;
@@ -234,13 +262,14 @@
         display: flex;
         justify-content: center;
         border-radius: 30px;
-        width: 90%;
         padding: 20px;
         box-shadow: 1px 5px 1px 1px black;
+        flex-wrap: wrap;
     }
     
     .boxpage__button--con {
-        width: 30%;
+        width: 400px;
+        padding: 20px;
     }
     
     .boxpage__button--con h1 {
@@ -273,6 +302,7 @@
     .box__info--exp {
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
     }
     
     .box__info--exp-con {
@@ -301,21 +331,84 @@
         justify-items: center;
         align-items: center;
         height: 400px;
+        flex-wrap: wrap;
     }
     
     .footer__info {
-        width: 30%;
+        /* width: 30%; */
         background-color: black;
         justify-items: center;
         align-items: center;
         text-align: center;
+        padding: 50px;
     }
     
     .img__info {
         background-color: #fff;
-        width: 30%;
+        width: 100px;
         max-width: 70px;
         height: 70px;
         border-radius: 40px;
         justify-items: center;
+    }
+    
+    @media (max-width: 780px) {
+        body {
+            width: 110%;
+        }
+        .header01 {
+            padding: 0;
+        }
+        .header__logo {
+            width: 100%;
+            margin: 0;
+            padding-top: 100px;
+            text-align: center;
+        }
+        p.logo {
+            font-size: 4em;
+        }
+        .mid_img img {
+            display: block;
+            width: 100%;
+        }
+        .box__mid .text01 {
+            width: 100%;
+            padding: 30px;
+            font-size: 12px;
+        }
+        .boxpage__button {
+            width: 75%;
+        }
+        h1 {
+            font-size: 2em;
+        }
+        .box__info--exp-con {
+            width: 100%;
+        }
+        .img__icon {
+            width: 100%;
+        }
+        footer {
+            height: 100%;
+        }
+        /* Ẩn menu khi thu gọn */
+        .menu__info {
+            display: none;
+            flex-direction: column;
+            width: 100%;
+            background-color: black;
+            position: absolute;
+            top: 80px;
+            left: 0;
+            z-index: 3;
+        }
+        /* Hiển thị menu khi nhấn vào hamburger */
+        .menu__info.open {
+            display: flex;
+        }
+        /* Hiển thị hamburger icon trên màn hình nhỏ */
+        .menu__toggle {
+            display: flex;
+        }
     }
