@@ -32,7 +32,7 @@
     }
     
     p {
-        font-size: 2em;
+        font-size: 1.5em;
         font-weight: 500;
     }
     /* Menu */
@@ -346,6 +346,9 @@
     @media (max-width: 780px) {
         body {
             width: 100%;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
         }
         .header01 {
             padding: 0;
@@ -383,6 +386,10 @@
         footer {
             height: 100%;
         }
+        .footer__info {
+            width: 100%;
+            padding: 10px;
+        }
         /* Ẩn menu khi thu gọn */
         .menu__info {
             display: none;
@@ -401,5 +408,19 @@
         /* Hiển thị hamburger icon trên màn hình nhỏ */
         .menu__toggle {
             display: flex;
+        }
+        .mid {
+            justify-items: end;
+        }
+        .boxpage__button {
+            padding: 0px;
+        }
+        .boxneedpage {
+            /* margin-right: 0;
+            margin-left: 0; */
+            justify-items: end;
+        }
+        .box__mid02--con {
+            width: 350px;
         }
     }
