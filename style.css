@@ -47,7 +47,6 @@
         height: 80px;
         align-items: center;
         justify-content: space-around;
-        /* Điều chỉnh để phân chia không gian đều */
         position: relative;
         position: fixed;
         z-index: 4;
@@ -57,7 +56,6 @@
     .menu__logo {
         font-weight: 900;
         font-size: 24px;
-        /* Thêm font-size để logo dễ nhìn hơn */
         display: flex;
         align-items: center;
     }
@@ -66,10 +64,8 @@
     .menu__info {
         display: flex;
         justify-content: space-around;
-        /* Căn đều các mục menu */
         font-weight: 900;
         font-size: 18px;
-        /* Thêm font-size để dễ đọc */
     }
     
     .menu__info--thongtin {
@@ -110,8 +106,6 @@
     .header01 {
         background-color: #f196e4;
         max-width: 1140px;
-        /* Thêm padding để không gian thoáng hơn */
-        /* text-align: center; */
         display: block;
         padding: 100px;
     }
@@ -178,14 +172,12 @@
         width: 100%;
         padding: 50px 0;
         justify-items: center;
-        /* Thêm padding để các phần tử không dính vào nhau */
     }
     /* Box phần giữa */
     
     .box__mid {
         display: flex;
         justify-items: center;
-        /* Chia đều không gian giữa các phần tử */
         max-width: 1140px;
         flex-wrap: wrap;
     }
@@ -335,7 +327,6 @@
     }
     
     .footer__info {
-        /* width: 30%; */
         background-color: black;
         justify-items: center;
         align-items: center;
