@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>CV Phạm Lê Xuân</title>
 </head>
 
@@ -14,11 +15,22 @@
         <div class="menu__logo">
             <p>Xuân Phạm</p>
         </div>
-        <div class="menu__info">
+        <div class="menu__toggle" id="menuToggle">
+            <span class="bar">
+            </span>
+            <span class="bar">
+            </span>
+            <span class="bar">
+            </span>
+            <span class="bar">
+            </span>
+        </div>
+
+        <div class="menu__info" id="menuInfo">
             <p class="menu__info--thongtin">
                 <a href="#">Trang chủ</a></p>
             <p class="menu__info--thongtin">
-                <a href="#exp">Công việc gần đây</a></p>
+                <a href="#exp">Công việc</a></p>
             <p class="menu__info--thongtin">
                 <a href="#skill">Skill</a>
             </p>
@@ -27,19 +39,17 @@
     </div>
 
     <!-- Header -->
-    <header class="header">
-        <div class="header__logo">
-            <p class="logo">Xuân Phạm</p>
-            <h1>Mong muốn phát triển bản thân trong lĩnh vực thiết kế website, với mục tiêu nâng cao kỹ năng và đóng góp vào những dự án sáng tạo và chất lượng.
-            </h1>
-            <h3>Mặc dù hiện tại tôi đang ở trình độ Trung cấp và có GPA đạt 3.02/4, tôi luôn nỗ lực học hỏi và phát triển để đạt được những thành tựu tốt hơn trong ngành công nghệ web.
-            </h3>
-            <button class="plans">See Plans</button>
+    <header>
+        <div class="header01">
+            <div class="header__logo">
+                <p class="logo">Xuân Phạm</p>
+                <h1>Mong muốn phát triển bản thân trong lĩnh vực thiết kế website và môi trường làm việc năng động.
+                </h1>
+                <button class="plans">See Plans</button>
+            </div>
         </div>
     </header>
-
-    <!-- Header Image -->
-    <div class="img-header-mid">
+    <div class="line01">
         <img src="./images/Capture.PNG" alt="Header Image">
     </div>
 
@@ -51,30 +61,30 @@
             </div>
             <div class="text01">
                 <div class="text01__box">
-                    <h2 class="text01_tl">Suy nghĩ về tương lai thiết kế của bản thân </h2>
+                    <h2 class="text01_tl">QUÁ TRÌNH HỌC VÀ TÌM HIỂU </h2>
                     <h3 class="text01_tl">
-                        "Tôi luôn ấn tượng với những thiết kế UX/UI trực quan, bắt mắt và dễ dàng tiếp cận. Tôi hy vọng rằng các trang web tại Việt Nam sẽ ngày càng được thiết kế với UX/UI hợp lý và hiệu quả hơn. Dù tôi chưa có nhiều kinh nghiệm, nhưng tôi luôn mong muốn đóng
-                        góp vào sự phát triển của lĩnh vực này theo một cách mới mẻ và sáng tạo." </h3>
+                        "Trong quá trình học tại trường em đã được học về HTML, CSS, MySQL,PHP,...Thì bản thân em cảm thấy chưa đủ nên e đã học thêm quá các trang web và youtobe w3schools,pinterest,evondev,...
+                        <br> Trong quá trình học e tập trung vào HTML và CSS để năng cao khả năng viết code của mình. " </h3>
                 </div>
             </div>
         </section>
 
         <!-- Skills Section -->
         <section class="box__mid02" id="skill">
-            <h1 style="font-size: 40px;">KIẾN THỨC BẢN THÂN </h1>
+            <h1 style="font-size: 40px;">KỸ NĂNG VỀ CODE </h1>
             <div class="totalmidbox">
                 <div class="box__mid02--con">
                     <div class="box__mid02--con--top"></div>
                     <div class="box__mid02--con--bottom">
                         <h2>HTML</h2>
-                        <p>Đối với HTML, đây là kỹ năng cơ bản tôi đang phát triển và làm quen.Bản thân có thể làm khá tốt trong viết và làm việt tốt với nó.</p>
+                        <p>Đối với HTML, đây là kỹ năng cơ bản tôi đang phát triển và làm quen.Bản thân có thể làm khá tốt trong viết và làm việC tốt với HTML.</p>
                     </div>
                 </div>
                 <div class="box__mid02--con">
                     <div class="box__mid02--con--top"></div>
                     <div class="box__mid02--con--bottom">
                         <h2>CSS</h2>
-                        <p>CSS là công cụ thêm style hỗ trợ cho html nên ko thể thiếu trong một trang website để thêm phần trực quan và bất mắt cho người xem và người dùng. </p>
+                        <p>CSS là công cụ thêm style hỗ trợ cho html nên ko thể thiếu trong một trang website để thêm phần trực quan và bắt mắt cho người xem và người dùng. </p>
                     </div>
                 </div>
                 <div class="box__mid02--con">
@@ -88,7 +98,7 @@
             </div>
         </section>
         <section class="boxneedpage">
-            <h1 style="font-size: 40px;">KIẾN THỨC BẢN THÂN </h1>
+            <h1 style="font-size: 2em;">MỘT WEBSITE CẦN CÓ </h1>
             <div class="boxpage__button">
                 <div class="boxpage__button--con">
                     <h1>Design</h1>
@@ -164,16 +174,16 @@
                         <p>
                             -Luôn thái độ tích cực với khác hàng.
                             <br>-Kiểm tra sản,fill hàng hóa và báo date mỗi ngày.
-                            <br>-In tem kệ cho sản phẩm theo đợi.
+                            <br>-In tem kệ cho sản phẩm theo đợt.
                             <br>-Chuẩn bị các sự kiện sale.
-                            <br>-Cập nhật danh thu hàng ngày.
+                            <br>-Cập nhật doanh thu hàng ngày.
                         </p>
                     </div>
                 </div>
                 <div class="box__info--exp-con">
                     <div class="img__icon"></div>
                     <div class="box__info--text">
-                        <h1>Kinh ngiệm trong quá trình học</h1>
+                        <h1>Trong quá trình học tại trường</h1>
                         <p>-Là người viết code và thiết kế của nhóm tạo trong quá trình làm bài thực tập.
                             <br>-Tình nguyện viên trong các hoạt động cộng đồng.
                         </p>
@@ -185,6 +195,7 @@
         <div class="line01">
             <img src="./images/line.PNG" alt="">
         </div>
+        <!--Footer-->
         <footer id="info">
             <div class="footer__info">
                 <div class="img__info"><img src="./images/phone-solid-60.png" alt="">
@@ -206,6 +217,16 @@
 
         </footer>
     </main>
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const menuInfo = document.getElementById('menuInfo');
+
+        menuToggle.addEventListener('click', () => {
+            menuInfo.classList.toggle('open');
+            menuToggle.classList.toggle('active');
+        });
+    </script>
+
 </body>
 
 </html>
