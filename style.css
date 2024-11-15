@@ -345,7 +345,7 @@
     
     @media (max-width: 780px) {
         body {
-            width: 110%;
+            width: 100%;
         }
         .header01 {
             padding: 0;
