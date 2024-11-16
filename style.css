@@ -27,7 +27,7 @@
     }
     
     h3 {
-        font-size: 1.4em;
+        font-size: 1.7em;
         line-height: 1.7;
     }
     
@@ -40,7 +40,6 @@
     .menu {
         background-color: black;
         width: 100%;
-        /* width: 1530px; */
         color: white;
         display: flex;
         opacity: 1;
